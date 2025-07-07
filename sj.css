@@ -1,0 +1,252 @@
+/* Basic Reset & Global Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Using a Google Font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Light background */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #2c3e50; /* Dark blue */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #bdc3c7; /* Lighter grey for subtitle */
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1abc9c; /* Turquoise */
+}
+
+/* Main Content Sections */
+section {
+    padding: 60px 0;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2em;
+    color: #2c3e50;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #1abc9c;
+}
+
+/* About Section */
+.profile-photo {
+    display: block;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; /* Makes it round */
+    object-fit: cover;
+    margin: 0 auto 30px;
+    border: 5px solid #1abc9c;
+}
+
+#about p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.languages {
+    font-style: italic;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* Skills Section */
+#skills .skills-category {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#skills .skills-category h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    font-size: 1.5em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+#skills .skills-category ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* For horizontal layout */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 15px; /* Space between items */
+}
+
+#skills .skills-category ul li {
+    background-color: #ecf0f1; /* Light grey */
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.95em;
+    color: #555;
+    white-space: nowrap; /* Prevent breaking lines within a skill tag */
+}
+
+/* Projects Section */
+.project-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+.project-item h3 {
+    color: #1abc9c;
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+.project-item p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.responsibility-note {
+    font-style: italic;
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* Education Section */
+.education-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.education-item h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.education-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Contact Section */
+#contact p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#contact a {
+    color: #1abc9c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #2c3e50;
+}
+
+
+/* Footer */
+footer {
+    background-color: #34495e; /* Darker blue */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    nav ul li {
+        margin: 0 8px;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
